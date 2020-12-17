@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Personal Portofolio of Faez Tgh" />
+  <link rel="icon" href="./ff.png" />
+
+
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <title>FaezTgh </title>
+</head>
+
+<body>
+ <script>
+   if (typeof window.__REACT_DEVTOOLS_GLOBAL_HOOK__ === 'object') {
+     __REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function () {};
+   }
+ </script>
+
+  <form name="contact" netlify netlify-honeypot='bot-field' hidden>
+    <div className="border-wrapper">
+
+      <TextField type="text" name="fullName" />
+      <TextField type="email" name="email" />
+      <TextField type="phone" name="phone" />
+      <TextareaAutosize name="message" />
+
+    </div>
+  </form>
+
+
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+
+</body>
+
+</html>
